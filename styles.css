@@ -529,38 +529,13 @@ section {
 
 /* Work Experience Section */
 .experience {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    position: relative;
-    overflow: hidden;
-}
-
-.experience::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-    opacity: 0.3;
-}
-
-.experience .section-title {
-    color: white;
-    position: relative;
-    z-index: 1;
-}
-
-.experience .section-title::after {
-    background: linear-gradient(90deg, #fbbf24, #f59e0b);
+    background: #f8fafc;
 }
 
 .experience-timeline {
-    position: relative;
-    z-index: 1;
     max-width: 800px;
     margin: 0 auto;
+    position: relative;
 }
 
 .experience-timeline::before {
@@ -569,41 +544,39 @@ section {
     left: 30px;
     top: 0;
     bottom: 0;
-    width: 3px;
-    background: linear-gradient(180deg, #fbbf24, #f59e0b);
-    border-radius: 2px;
+    width: 2px;
+    background: #2563eb;
+    border-radius: 1px;
 }
 
 .experience-item {
     position: relative;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
+    background: white;
+    border-radius: 12px;
     padding: 2rem;
     margin-bottom: 2rem;
     margin-left: 60px;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #2563eb;
 }
 
 .experience-item::before {
     content: '';
     position: absolute;
-    left: -45px;
+    left: -35px;
     top: 2rem;
-    width: 20px;
-    height: 20px;
-    background: #fbbf24;
+    width: 12px;
+    height: 12px;
+    background: #2563eb;
     border-radius: 50%;
-    border: 4px solid white;
-    box-shadow: 0 0 0 4px rgba(251, 191, 36, 0.3);
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px #2563eb;
 }
 
 .experience-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .experience-header {
@@ -616,51 +589,34 @@ section {
 }
 
 .experience-header h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
-    color: #fbbf24;
+    color: #1f2937;
     margin: 0;
     line-height: 1.3;
 }
 
 .experience-year {
-    background: linear-gradient(135deg, #fbbf24, #f59e0b);
-    color: #1f2937;
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
-    font-size: 0.9rem;
-    font-weight: 600;
+    background: #2563eb;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
     white-space: nowrap;
-    box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
 }
 
 .experience-company {
     font-size: 1.1rem;
     font-weight: 600;
-    color: white;
+    color: #2563eb;
     margin-bottom: 0.25rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.experience-company::before {
-    content: '🏢';
-    font-size: 1rem;
 }
 
 .experience-location {
-    color: rgba(255, 255, 255, 0.8);
+    color: #6b7280;
     font-size: 0.95rem;
     margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.experience-location::before {
-    content: '📍';
-    font-size: 0.9rem;
 }
 
 .experience-details {
@@ -671,20 +627,20 @@ section {
 
 .experience-details li {
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 1.25rem;
     margin-bottom: 0.75rem;
     line-height: 1.6;
-    color: rgba(255, 255, 255, 0.9);
+    color: #4b5563;
     font-size: 0.95rem;
 }
 
 .experience-details li::before {
-    content: '▸';
+    content: '•';
     position: absolute;
     left: 0;
-    color: #fbbf24;
+    color: #2563eb;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .experience-details li:last-child {
@@ -1077,9 +1033,9 @@ html {
 
     .experience-item::before {
         left: -30px;
-        width: 16px;
-        height: 16px;
-        border-width: 3px;
+        width: 10px;
+        height: 10px;
+        border-width: 2px;
     }
 
     .experience-header {
@@ -1093,8 +1049,8 @@ html {
     }
 
     .experience-year {
-        font-size: 0.85rem;
-        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+        padding: 0.3rem 0.7rem;
     }
 
     .experience-company {
