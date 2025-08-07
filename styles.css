@@ -125,14 +125,16 @@ body {
 }
 
 .hero-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
     align-items: center;
-    gap: 2rem;
-    padding: 2rem 1rem;
+    position: relative;
+    z-index: 1;
 }
-
 
 .hero-title {
     font-size: 3.5rem;
@@ -226,17 +228,14 @@ body {
 }
 
 .profile-photo {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    aspect-ratio: 1 / 1;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid rgba(255, 255, 255, 0.2);
     animation: float 6s ease-in-out infinite;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
-
 
 .profile-img {
     width: 100%;
@@ -345,93 +344,6 @@ section {
 .stat p {
     color: #6b7280;
     font-weight: 500;
-}
-
-/* Work Experience Section */
-.experience {
-    background: white;
-}
-
-.experience-timeline {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.experience-item {
-    background: white;
-    padding: 2rem;
-    border-radius: 16px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    margin-bottom: 2rem;
-    border-left: 4px solid #2563eb;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-}
-
-.experience-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-}
-
-.experience-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 0.5rem;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.experience-header h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #1f2937;
-    margin: 0;
-}
-
-.experience-year {
-    background: linear-gradient(135deg, #2563eb, #3b82f6);
-    color: white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    white-space: nowrap;
-}
-
-.experience-company {
-    font-weight: 600;
-    color: #2563eb;
-    margin-bottom: 0.25rem;
-    font-size: 1rem;
-}
-
-.experience-location {
-    color: #6b7280;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-}
-
-.experience-details {
-    color: #4b5563;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    list-style: none;
-    padding: 0;
-}
-
-.experience-details li {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.experience-details li::before {
-    content: '▸';
-    position: absolute;
-    left: 0;
-    color: #2563eb;
-    font-weight: bold;
 }
 
 /* Education Section */
