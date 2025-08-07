@@ -849,3 +849,56 @@ html {
         height: 250px;
     }
 }
+
+@media (max-width: 768px) {
+    .experience {
+        padding: 2rem 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .experience-timeline {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .experience-item {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .experience-header h3 {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .experience-year {
+        font-size: 0.95rem;
+        color: #fbbf24;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .experience-company,
+    .experience-location {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .experience-details {
+        padding-left: 1rem;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .experience-details li {
+        margin-bottom: 0.5rem;
+    }
+}
