@@ -16,6 +16,41 @@ body {
     overflow-x: hidden;
 }
 
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .profile-photo {
+        width: 250px;
+        height: 250px;
+    }
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -125,16 +160,14 @@ body {
 }
 
 .hero-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    position: relative;
-    z-index: 1;
+    gap: 2rem;
+    padding: 2rem 1rem;
 }
+
 
 .hero-title {
     font-size: 3.5rem;
@@ -228,14 +261,17 @@ body {
 }
 
 .profile-photo {
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid rgba(255, 255, 255, 0.2);
     animation: float 6s ease-in-out infinite;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
+
 
 .profile-img {
     width: 100%;
