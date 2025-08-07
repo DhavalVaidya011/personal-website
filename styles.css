@@ -357,14 +357,6 @@ section {
     color: #1f2937;
     margin-bottom: 1.5rem;
     position: relative;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.education-section h3::before {
-    content: '🎓';
-    font-size: 1.8rem;
 }
 
 .education-section h3::after {
