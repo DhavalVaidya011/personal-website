@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Dhaval Kalpesh Vaidya</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Dhaval Kalpesh Vaidya</span></h1>
+                <p class="hero-subtitle">Full Stack Developer & Quantum Computing Enthusiast</p>
+                <p class="hero-description">
+                    I'm a passionate developer with a love for creating meaningful digital experiences. With expertise in modern web technologies, I focus on building scalable solutions that solve real-world problems. 
+                    When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, reading biographies,or researching about quantum computing.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-photo">
+                    <img src="images/profile-photo-21.jpeg" alt="Dhaval Kalpesh Vaidya" class="profile-img">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <!-- <p>
+                        I'm a passionate developer with a love for creating meaningful digital experiences. 
+                        With expertise in modern web technologies, I focus on building scalable solutions 
+                        that solve real-world problems.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me exploring new technologies, contributing to 
+                        open-source projects, reading biographies,or researching about quantum computing.
+                    </p>
+                     -->
+                    <!-- Education Section -->
+                    <div class="education-section">
+                        <h3>Education</h3>
+                                                 <div class="education-item">
+                             <div class="education-header">
+                                 <h4>Master of Science in Computer Science</h4>
+                                 <span class="education-year">Aug 2024 - May 2026</span>
+                             </div>
+                             <p class="education-institution">North Carolina State University</p>
+                             <p class="education-location">Raleigh, NC</p>
+                             <p class="education-gpa">GPA: 4.0/4.0</p>
+                             <p class="education-details">Data Structures and Algorithms, Automated Learning and Data Analysis, Artificial Intelligence, Quantum Computing, Cryptography</p>
+                         </div>
+                        
+                                                 <div class="education-item">
+                             <div class="education-header">
+                                 <h4>B.Tech in Information and Communication Technology</h4>
+                                 <span class="education-year"> July 2019 - May 2023</span>
+                             </div>
+                             <p class="education-institution">Dhirubhai Ambani Institute of Information and Communication Technology</p>
+                             <p class="education-location">Gujarat, India</p>
+                             <p class="education-gpa">GPA: 8.0/10.0</p>
+                             <p class="education-details">Software Development, Computer Organization and Architecture, Algorithms, Artificial Intelligence, Computer Networks, Operating Systems, Quantum Computing</p>
+                         </div>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>1.5+</h3>
+                            <p>Years Professional Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Personal Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Software Developer</h3>
+                        <span class="experience-year">June 2023 - June 2024</span>
+                    </div>
+                    <p class="experience-company">Delhivery Limited</p>
+                    <p class="experience-location">Gurugram, India</p>
+                    <ul class="experience-details">
+                        <li>Developed and maintained full-stack web applications using Angular, Node.js, and AWS services</li>
+                        <li>Implemented secure authentication and authorization systems using JWT tokens and Keycloak</li>
+                        <li>Designed and optimized database schemas for DynamoDB and PostgreSQL</li>
+                        <li>Collaborated with cross-functional teams to deliver high-quality software solutions</li>
+                        <li>Participated in code reviews and mentored junior developers</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Software Development Intern</h3>
+                        <span class="experience-year">Jan 2023 - May 2023</span>
+                    </div>
+                    <p class="experience-company">Delhivery Limited</p>
+                    <p class="experience-location">Gurugram, India</p>
+                    <ul class="experience-details">
+                        <li>Built responsive web applications using React.js and Node.js</li>
+                        <li>Integrated RESTful APIs and implemented state management with Redux</li>
+                        <li>Developed a User Management System for the logistics company which stores secure data and allows users to query the data according to
+                            their roles and permissions using JWT tokens.
+                        </li>
+                        <li>Solved high priority bugs maintaining the integrity of the web application.</li>
+                        <li>Participated in agile development processes and sprint planning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>Angular</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-tailwindcss-plain text-5xl text-cyan-400"></i>
+                            <span>TailwindCSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>Next.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>DynamoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>PostreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>Cloud</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Qiskit-Logo.svg/1200px-Qiskit-Logo.svg.png" alt="Qiskit">
+                            <span>Qiskit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Facility As A Service App</h3>
+                        <p>A web application which stores the data of all the warehouses, hubs and distribution centers
+                            for a logistics and supply chain corporation. The data is protected using a secure layer which allows users to 
+                            query the data based on their roles and permissions.
+                        </p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Angular</span>
+                            <span>DynamoDB</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Image Segmentation based on boundary detection</h3>
+                        <p>A tool that segments image based on edge detection. 
+                            The model is trained on BSDS-300 dataset on color as well as grayscale images.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Computer Vision</span>
+                            <span>OpenCV</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>SplitBill mobile application</h3>
+                        <p> A money manager application which allows user to manage and split their 
+                            money in group of friends. The application allows users to specify the share of each person
+                            in percentages or absolute value and will simplify the balances pertaining to minimum transactions.
+                        </p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>React</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div> -->
+                    </div>
+                </div>
+       
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Quantum Random Walks</h3>
+                        <p>A collaborative project of Amazon, MeitY (Ministry of Electronics and Information Technology) and DA-IICT where I
+                            researched Discrete-Time Quantum Random Walks and their behaviour on Cube-like graphs.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Qiskit</span>
+                            <span>AWS</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div> -->
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                     <div class="project-image">
+                         <div class="image-placeholder">
+                             <i class="fas fa-shield-alt"></i>
+                         </div>
+                     </div>
+                     <div class="project-content">
+                         <h3>Angular Interceptor</h3>
+                     <p> A high priority Angular Interceptor which intercepts calls on frontend, attaches
+                         a token as per the roles and permissions of users and sends the requests to the
+                          authorization server improving security and restricting the user to access the secure APIs
+                          of authorization server directly.
+                     </p>
+                     <div class="project-tech">
+                         <span>Angular</span>
+                         <span>JWT</span>
+                         <span>Keycloak</span>
+                     </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div> -->
+                    </div>
+                </div>
+                
+                                 <div class="project-card">
+                     <div class="project-image">
+                         <div class="image-placeholder">
+                             <i class="fas fa-laptop-code"></i>
+                         </div>
+                     </div>
+                     <div class="project-content">
+                         <h3>E-Learning Management System</h3>
+                         <p>A comprehensive full-stack E-Learning Management System with advanced database design and implementation. The system features user authentication, course management, student enrollment, progress tracking, and assessment modules. Built with a focus on scalability and user experience, it includes features like real-time notifications, discussion forums, and automated grading systems.</p>
+                         <div class="project-tech">
+                             <span>PostgreSQL</span>
+                             <span>Node.js</span>
+                             <span>React</span>
+                             <span>Express.js</span>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. 
+                       Feel free to reach out if you'd like to collaborate or just say hello.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>vaidyadhaval09@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (919) 521-3644</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Raleigh, NC</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Dhaval Kalpesh Vaidya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
