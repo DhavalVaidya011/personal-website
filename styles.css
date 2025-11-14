@@ -461,18 +461,41 @@ section {
 }
 
 /* Skills Section */
+/* .projects {
+    background: #f8fafc;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.project-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
+    padding: 1rem;
+    justify-items: center;
 }
 
 .skill-category {
     background: white;
-    padding: 2rem;
     border-radius: 16px;
+    padding: 2rem;
+    overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 350px;
+    min-height: 300px;
 }
 
 .skill-category:hover {
@@ -646,6 +669,7 @@ section {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 1rem;
     gap: 2rem;
 }
 
